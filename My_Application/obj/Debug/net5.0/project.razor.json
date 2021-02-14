@@ -15628,6 +15628,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
