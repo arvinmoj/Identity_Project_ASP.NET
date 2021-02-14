@@ -3505,10 +3505,7 @@
         },
         "runtime": {
           "bin/placeholder/XUnitTestProject.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
