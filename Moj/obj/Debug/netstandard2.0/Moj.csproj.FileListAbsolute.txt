@@ -1,0 +1,9 @@
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\bin\Debug\netstandard2.0\Moj.deps.json
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\bin\Debug\netstandard2.0\Moj.dll
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\bin\Debug\netstandard2.0\Moj.pdb
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\obj\Debug\netstandard2.0\Moj.csprojAssemblyReference.cache
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\obj\Debug\netstandard2.0\Moj.AssemblyInfoInputs.cache
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\obj\Debug\netstandard2.0\Moj.AssemblyInfo.cs
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\obj\Debug\netstandard2.0\Moj.csproj.CoreCompileInputs.cache
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\obj\Debug\netstandard2.0\Moj.dll
+C:\Users\pc1\Desktop\TempMVC_ASP.NET\Moj\obj\Debug\netstandard2.0\Moj.pdb
