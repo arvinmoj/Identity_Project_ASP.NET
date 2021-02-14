@@ -17,22 +17,28 @@ namespace Models
         [Key]
         public Guid Id { get; set; }
 
-        [Required]
         [MaxLength(25)]
         [DataType(DataType.Text)]
         [Display(Name = "Firstname")]
+        [Required(ErrorMessage = "FirstName Is Required")]
         public string Firstname { get; set; }
 
-        [Required]
         [MaxLength(25)]
         [DataType(DataType.Text)]
         [Display(Name = "Lastname")]
+        [Required(ErrorMessage = "Lastname Is Required")]
         public string Lastname { get; set; }
 
-        [Required]
         [MaxLength(25)]
+        [DataType(DataType.Text)]
+        [Display(Name = "City")]
+        public string City { get; set; }
+
+        [MaxLength(25)]
+        [DataType(DataType.Text)]
         [Display(Name = "Gender")]
-        [DataType(DataType.Custom)]
+        [Required(ErrorMessage = "Gender Is Required")]
         public string Gender { get; set; }
+
     }
 }

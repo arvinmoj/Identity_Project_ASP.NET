@@ -14,6 +14,7 @@ namespace Data.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Firstname = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
                     Lastname = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
+                    City = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: true),
                     Gender = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false)
                 },
                 constraints: table =>
