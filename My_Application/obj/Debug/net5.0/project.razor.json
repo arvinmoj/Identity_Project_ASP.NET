@@ -15603,6 +15603,11 @@
   "RootNamespace": "My_Application",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Employee\\Delete.cshtml",
+      "TargetPath": "Views\\Employee\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -15618,8 +15623,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Employee\\Index.cshtml",
+      "TargetPath": "Views\\Employee\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Employee\\Edit.cshtml",
+      "TargetPath": "Views\\Employee\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15635,6 +15650,16 @@
     {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Employee\\Create.cshtml",
+      "TargetPath": "Views\\Employee\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity\\My_Application\\Views\\Employee\\Details.cshtml",
+      "TargetPath": "Views\\Employee\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
