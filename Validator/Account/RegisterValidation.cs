@@ -30,7 +30,7 @@ namespace Validator.Account
             RuleFor(c => c.Password)
                 .NotNull().WithMessage("Password is Required.")
                 .NotEmpty()
-                .MinimumLength(3).WithMessage("Must Be Longer Than 3 Characters")
+                .MinimumLength(8).WithMessage("Must Be Longer Than 8 Characters")
                 .MaximumLength(20).WithMessage("Must Be Less Than Or Equal To 20 Characters");
             // *****
 
@@ -38,7 +38,7 @@ namespace Validator.Account
             RuleFor(c => c.ConfirmPassword)
                 .NotNull().WithMessage("ConfirmPassword is Required.")
                 .NotEmpty()
-                .MinimumLength(3).WithMessage("Must Be Longer Than 3 Characters")
+                .MinimumLength(8).WithMessage("Must Be Longer Than 8 Characters")
                 .MaximumLength(20).WithMessage("Must Be Less Than Or Equal To 20 Characters")
                 .Equal(c => c.Password).WithMessage("ConfirmPassword");
             // *****
