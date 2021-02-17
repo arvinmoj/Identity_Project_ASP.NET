@@ -6,6 +6,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using ViewModels.Account;
+using Validator.Account;
 
 namespace My_Application
 {
@@ -22,7 +26,10 @@ namespace My_Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews()
-                .AddRazorRuntimeCompilation();
+                .AddRazorRuntimeCompilation()
+                .AddFluentValidation(); 
+
+            services.AddTransient<IValidator<RegisterViewModel>,RegisterValidation>();
 
             services.AddDbContext<DatabaseContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DatabaseContext")));
@@ -30,6 +37,11 @@ namespace My_Application
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<DatabaseContext>()
                 .AddDefaultTokenProviders();
+
+        
+
+            //services.AddTransient<IValidator<RegisterValidation>, RegisterValidation>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

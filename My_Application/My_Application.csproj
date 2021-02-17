@@ -23,5 +23,8 @@
     <ProjectReference Include="..\Resources\Resources.csproj" />
     <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
     <ProjectReference Include="..\XUnitTestProject\XUnitTestProject.csproj" />
+    <ProjectReference Include="..\Validator\Validator.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

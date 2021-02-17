@@ -4383,46 +4383,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc1\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/macbook/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc1\\Desktop\\Identity\\ViewModels\\ViewModels.csproj",
+      "projectUniqueName": "/Users/macbook/Desktop/Identity/ViewModels/ViewModels.csproj",
       "projectName": "ViewModels",
-      "projectPath": "C:\\Users\\pc1\\Desktop\\Identity\\ViewModels\\ViewModels.csproj",
-      "packagesPath": "C:\\Users\\pc1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc1\\Desktop\\Identity\\ViewModels\\obj\\",
+      "projectPath": "/Users/macbook/Desktop/Identity/ViewModels/ViewModels.csproj",
+      "packagesPath": "/Users/macbook/.nuget/packages/",
+      "outputPath": "/Users/macbook/Desktop/Identity/ViewModels/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/macbook/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\pc1\\Desktop\\Identity\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity\\Models\\Models.csproj"
+            "/Users/macbook/Desktop/Identity/Models/Models.csproj": {
+              "projectPath": "/Users/macbook/Desktop/Identity/Models/Models.csproj"
             },
-            "C:\\Users\\pc1\\Desktop\\Identity\\Moj\\Moj.csproj": {
-              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity\\Moj\\Moj.csproj"
+            "/Users/macbook/Desktop/Identity/Moj/Moj.csproj": {
+              "projectPath": "/Users/macbook/Desktop/Identity/Moj/Moj.csproj"
             }
           }
         }
@@ -4457,7 +4450,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }
