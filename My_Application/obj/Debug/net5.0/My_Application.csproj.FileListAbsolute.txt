@@ -504,11 +504,11 @@ C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\XU
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Moj.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Data.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Models.pdb
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Repository.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Resources.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\ViewModels.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\XUnitTestProject.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Validator.pdb
-C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\bin\Debug\net5.0\Repository.pdb
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\obj\Debug\net5.0\My_Application.csprojAssemblyReference.cache
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\obj\Debug\net5.0\My_Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pc1\Desktop\Identity_Project_ASP.NET\My_Application\obj\Debug\net5.0\My_Application.AssemblyInfoInputs.cache

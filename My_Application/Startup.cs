@@ -31,36 +31,68 @@ namespace My_Application
                 .AddRazorRuntimeCompilation()
                 .AddFluentValidation();
 
+            #region Fluent Validation
+            services.AddTransient<IValidator<LoginViewModel>, LoginValidation>();
             services.AddTransient<IValidator<RegisterViewModel>, RegisterValidation>();
+            #endregion
 
+            #region DatabaseContext
             services.AddDbContext<DatabaseContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DatabaseContext")));
+            #endregion
 
+            #region Identity Setting
+            // Identity Setting
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
+                #region User
+                // Require Unique Email
                 options.User.RequireUniqueEmail = true;
+                // Allowed UserName Characters
                 options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                #endregion
 
+                #region SignIn
+                // Require Confirmed Email
                 options.SignIn.RequireConfirmedEmail = true;
+                //Require Confirmed Account
                 options.SignIn.RequireConfirmedAccount = false;
+                // Require Confirmed PhoneNumber
                 options.SignIn.RequireConfirmedPhoneNumber = false;
+                #endregion
 
-                options.Password.RequiredLength = 8 ;
+                #region Password
+                // Required Length
+                options.Password.RequiredLength = 8;
+                // Require Digit
                 options.Password.RequireDigit = true;
+                // Required Unique Chars
                 options.Password.RequiredUniqueChars = 0;
+                // Require Uppercase
                 options.Password.RequireUppercase = true;
+                // Require Lowercase
                 options.Password.RequireLowercase = true;
+                // Require Non Alphanumeric
                 options.Password.RequireNonAlphanumeric = true;
+                #endregion
 
+                #region LockOut
+                // Allowed For NewUsers
                 options.Lockout.AllowedForNewUsers = true;
+                // Max Failed Access Attempts
                 options.Lockout.MaxFailedAccessAttempts = 5;
+                // Default Lockout TimeSpan
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
-
+                #endregion
 
             })
+            #endregion
+            
+            // Token Error Message
             .AddEntityFrameworkStores<DatabaseContext>()
             .AddDefaultTokenProviders();
 
+            // Message Sender
             services.AddScoped<IMessageSender, MessageSender>();
 
         }
@@ -90,7 +122,6 @@ namespace My_Application
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
-
         }
     }
 }

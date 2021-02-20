@@ -28,6 +28,7 @@ namespace My_Application.Controllers
             _messageSender = messageSender;
         }
 
+        #region Register
         // Register
         [HttpGet]
         public IActionResult Register()
@@ -78,6 +79,9 @@ namespace My_Application.Controllers
             return View(model);
         }
 
+        #endregion
+
+        #region Login
         // Login
         [HttpGet]
         public IActionResult Login(string returnUrl = null)
@@ -137,7 +141,9 @@ namespace My_Application.Controllers
             }
             return View(model);
         }
+        #endregion
 
+        #region LogOut
         // LogOut
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -146,7 +152,9 @@ namespace My_Application.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+        #endregion
 
+        #region Check Duplicate
         // Duplicate Email
         [HttpGet]
         public async Task<IActionResult> IsEmailInUse(string email)
@@ -176,7 +184,9 @@ namespace My_Application.Controllers
 
             return Json("The Entered Username Is Already Available");
         }
+        #endregion
 
+        #region Confirm Email
         // Confirm Email
         public async Task<IActionResult> ConfirmEmail(string username , string token)
         {
@@ -199,5 +209,7 @@ namespace My_Application.Controllers
 
             return Content(result.Succeeded ? " Email Confirmed " : "Email Not Confirmed");
         }
+        #endregion
+
     }
 }

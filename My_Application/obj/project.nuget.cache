@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LMeG06RJMf5GoWI8yZyX3eYIuuhI5cBXQV31thDK6VQTQ7o381wBdBxjvRsDi5vb4owdZfzH88mkq9E13umVUw==",
+  "dgSpecHash": "LeBCEY4yWYrAr2jfr8qbxzKukB2U+dl24Sg5+bH5cWdnLhqFutTuutaOCVcXRvEKdgGzv3OUEGsLaTVOlCxS4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\My_Application.csproj",
   "expectedPackageFiles": [
@@ -54,7 +54,7 @@
     "C:\\Users\\pc1\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\pc1\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\pc1\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0\\microsoft.codeanalysis.common.3.8.0.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0\\microsoft.codeanalysis.csharp.3.8.0.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\3.8.0\\microsoft.codeanalysis.csharp.workspaces.3.8.0.nupkg.sha512",
