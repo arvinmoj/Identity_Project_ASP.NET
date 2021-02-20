@@ -1,16 +1,17 @@
 using Data;
+using System;
+using Repository;
+using FluentValidation;
+using Validator.Account;
+using ViewModels.Account;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Identity;
-using FluentValidation.AspNetCore;
-using FluentValidation;
-using ViewModels.Account;
-using Validator.Account;
-using System;
 
 namespace My_Application
 {
@@ -60,9 +61,7 @@ namespace My_Application
             .AddEntityFrameworkStores<DatabaseContext>()
             .AddDefaultTokenProviders();
 
-
-
-            //services.AddTransient<IValidator<RegisterValidation>, RegisterValidation>();
+            services.AddScoped<IMessageSender, MessageSender>();
 
         }
 

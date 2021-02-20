@@ -23,7 +23,7 @@ namespace Validator.Account
                 .NotEmpty()
                 .EmailAddress(FluentValidation.Validators.EmailValidationMode.Net4xRegex).WithMessage("E-mail Is Not Valid.")
                 .MinimumLength(3).WithMessage("Must Be Longer Than 3 Characters")
-                .MaximumLength(20).WithMessage("Must Be Less Than Or Equal To 20 Characters");
+                .MaximumLength(64).WithMessage("Must Be Less Than Or Equal To 64 Characters");
             // *****
 
             // *****

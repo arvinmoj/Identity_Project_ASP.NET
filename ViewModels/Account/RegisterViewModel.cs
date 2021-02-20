@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ViewModels.Account
 {
@@ -10,10 +11,12 @@ namespace ViewModels.Account
 
         [MaxLength(64)]
         [Display(Name = "Username")]
+        [Remote("IsUsernameInUse","Account")]
         public string Username { get; set; }
 
         [MaxLength(64)]
         [Display(Name = "EmailAddress")]
+        [Remote("IsEmailInUse","Account")]
         public string Email { get; set; }
 
         [MaxLength(64)]
