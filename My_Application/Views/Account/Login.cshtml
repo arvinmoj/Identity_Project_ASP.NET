@@ -12,8 +12,7 @@
 
         @if (ViewData["ErrorMessage"] != null)
         {
-            <div class="text-danger">@ViewData["ErrorMessage"]</div>
-        }
+    <div class="text-danger">@ViewData["ErrorMessage"]</div>}
 
         <label asp-for="Username" class="col-md-2 control-label"></label>
         <div class="col-md-10">
@@ -33,6 +32,10 @@
             <label asp-for="RememberMe"></label>
             <input asp-for="RememberMe">
             <span asp-validation-for="RememberMe"></span>
+        </div>
+
+        <div style="margin-left: 15px" class="form-group">
+            <a asp-controller="Account" asp-action="ForgotPassword">Forgot Password !</a>
         </div>
 
         <div style="margin-left: 15px" class="form-group">

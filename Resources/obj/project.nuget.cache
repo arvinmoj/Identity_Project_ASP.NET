@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gQ+zF+7PidZGYA8+PTclcGbi1xQ5K5flqHSTCJTPIjaf34BkO+MXpZy64+4fke/cwgvX3ervm+o6sanA/g7apQ==",
+  "dgSpecHash": "Pc9XPVwpuAvmqMIMfEtQV2O2z9osqUt3nVdrGcvXuvhrB6Ap0jRmT9AMJqNhzWSdqWz5Sf4bMo7dMHHzcX2MHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Resources\\Resources.csproj",
+  "projectFilePath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Resources/Resources.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc1\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\pc1\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "/Users/macbook/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

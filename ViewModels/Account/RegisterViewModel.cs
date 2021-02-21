@@ -32,9 +32,9 @@ namespace ViewModels.Account
 
         // *****
         [MaxLength(64)]
-        [Compare(nameof(Password))]
         [DataType(DataType.Password)]
         [Display(Name = "ConfirmPassword")]
+        [Compare(nameof(Password) , ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
         // *****
 

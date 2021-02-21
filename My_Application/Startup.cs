@@ -34,6 +34,7 @@ namespace My_Application
             #region Fluent Validation
             services.AddTransient<IValidator<LoginViewModel>, LoginValidation>();
             services.AddTransient<IValidator<RegisterViewModel>, RegisterValidation>();
+            services.AddTransient<IValidator<ForgotPasswordViewModel>, ForgotPasswordValidation>();
             #endregion
 
             #region DatabaseContext
@@ -87,10 +88,15 @@ namespace My_Application
 
             })
             #endregion
-            
+
             // Token Error Message
             .AddEntityFrameworkStores<DatabaseContext>()
             .AddDefaultTokenProviders();
+
+            services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromMinutes(10);
+            });
 
             // Message Sender
             services.AddScoped<IMessageSender, MessageSender>();

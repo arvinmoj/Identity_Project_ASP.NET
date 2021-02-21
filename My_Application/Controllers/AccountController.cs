@@ -21,7 +21,7 @@ namespace My_Application.Controllers
         private readonly SignInManager<IdentityUser> _signInManager;
 
         public AccountController(UserManager<IdentityUser> userManager,
-                                 SignInManager<IdentityUser> signInManager , IMessageSender messageSender)
+                                 SignInManager<IdentityUser> signInManager, IMessageSender messageSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -59,12 +59,15 @@ namespace My_Application.Controllers
                     // Url email message
                     var emailMessage =
                         Url.Action("ConfirmEmail", "Account",
-                                    new { username = user.UserName,
-                                        token = emailConfirmationToken },
+                                    new
+                                    {
+                                        username = user.UserName,
+                                        token = emailConfirmationToken
+                                    },
                                     Request.Scheme);
 
                     // Send Email
-                    await _messageSender.SendEmailAsync(model.Email, subject: "E-Mail Confirmation", emailMessage ,  isMessageHtml : false ) ;
+                    await _messageSender.SendEmailAsync(model.Email, subject: "E-Mail Confirmation", emailMessage, isMessageHtml: false);
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -188,7 +191,7 @@ namespace My_Application.Controllers
 
         #region Confirm Email
         // Confirm Email
-        public async Task<IActionResult> ConfirmEmail(string username , string token)
+        public async Task<IActionResult> ConfirmEmail(string username, string token)
         {
             // Null or Empty Username or token
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(token))
@@ -198,18 +201,96 @@ namespace My_Application.Controllers
 
             // Find Username
             var user = await _userManager.FindByNameAsync(username);
-            
+
             if (user == null)
             {
                 return NotFound();
             }
 
             // Confirm Email
-            var result = await _userManager.ConfirmEmailAsync(user , token);
+            var result = await _userManager.ConfirmEmailAsync(user, token);
 
             return Content(result.Succeeded ? " Email Confirmed " : "Email Not Confirmed");
         }
         #endregion
 
+        #region Forgot Password
+        // Forgot Password
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user == null)
+                {
+                    return RedirectToAction(nameof(ForgotPasswordConfirmation));
+                }
+
+                var passwordResetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var emailMessage = Url.Action("ResetPassword", "Account", new { username = user.UserName, token = passwordResetToken }, Request.Scheme);
+
+                await _messageSender.SendEmailAsync(model.Email, subject: "Password Confirmation", emailMessage, isMessageHtml: false);
+
+                return RedirectToAction(nameof(ForgotPasswordConfirmation));
+
+            }
+            return View(model);
+        }
+       
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
+        }
+        #endregion
+
+        [HttpGet]
+        public IActionResult ResetPassword(string token, string userName)
+        {
+            var model = new ResetPasswordViewModel { Token = token, Username = userName };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (ModelState.IsValid) 
+            {
+                var user = await _userManager.FindByNameAsync(model.Username);
+
+                if (user == null) 
+                {
+                    RedirectToAction(nameof(ResetPasswordConfirmation));
+                }
+
+                var resetPassResult = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+
+                if (!resetPassResult.Succeeded)
+                {
+                    foreach (var error in resetPassResult.Errors)
+                    {
+                        ModelState.TryAddModelError(error.Code, error.Description);
+                    }
+                    return View();
+                }
+
+                return RedirectToAction(nameof(ResetPasswordConfirmation));
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult ResetPasswordConfirmation()
+        {
+            return View();
+        }
     }
 }

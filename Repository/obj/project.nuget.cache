@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kLnlcIhwNvJWjhIPXEqIpMu0s5330n0bPtAln4+bhWizza37kk8Dhr12719u1/GbzMACIHtJHym/4OLiTs2w+Q==",
+  "dgSpecHash": "GiJMKObbnpPJbvt4RHFW0O2nQ6nb5XOoUKlbF9tcOOSCC4+2hjHir9v1tYY+SsGf0OnqHMjeRyu0JiUELNbzTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Repository\\Repository.csproj",
+  "projectFilePath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Repository/Repository.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

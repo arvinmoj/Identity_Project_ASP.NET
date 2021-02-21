@@ -8,9 +8,6 @@
     <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Account\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
   </ItemGroup>
 </Project>
