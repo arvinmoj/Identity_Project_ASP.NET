@@ -1,12 +1,13 @@
+using Data;
+using Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Data;
-using Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace My_Application.Controllers
 {
@@ -19,12 +20,14 @@ namespace My_Application.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         // GET: Employee
         public async Task<IActionResult> Index()
         {
             return View(await _context.Employees.ToListAsync());
         }
 
+        [AllowAnonymous]
         // GET: Employee/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
@@ -43,6 +46,7 @@ namespace My_Application.Controllers
             return View(employee);
         }
 
+        [Authorize]
         // GET: Employee/Create
         public IActionResult Create()
         {
@@ -53,6 +57,7 @@ namespace My_Application.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Firstname,Lastname,City,Gender")] Employee employee)
         {
@@ -67,6 +72,7 @@ namespace My_Application.Controllers
         }
 
         // GET: Employee/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -86,6 +92,7 @@ namespace My_Application.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Firstname,Lastname,City,Gender")] Employee employee)
         {
@@ -118,6 +125,7 @@ namespace My_Application.Controllers
         }
 
         // GET: Employee/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
@@ -136,6 +144,7 @@ namespace My_Application.Controllers
         }
 
         // POST: Employee/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)

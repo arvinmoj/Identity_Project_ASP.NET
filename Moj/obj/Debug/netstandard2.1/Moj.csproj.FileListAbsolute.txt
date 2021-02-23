@@ -7,3 +7,11 @@
 /Users/macbook/Desktop/Identity_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.csproj.CoreCompileInputs.cache
 /Users/macbook/Desktop/Identity_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.dll
 /Users/macbook/Desktop/Identity_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.pdb
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\bin\Debug\netstandard2.1\Moj.deps.json
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\bin\Debug\netstandard2.1\Moj.dll
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\bin\Debug\netstandard2.1\Moj.pdb
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\obj\Debug\netstandard2.1\Moj.AssemblyInfoInputs.cache
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\obj\Debug\netstandard2.1\Moj.AssemblyInfo.cs
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\obj\Debug\netstandard2.1\Moj.csproj.CoreCompileInputs.cache
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\obj\Debug\netstandard2.1\Moj.dll
+C:\Users\pc1\Desktop\Identity_Project_ASP.NET\Moj\obj\Debug\netstandard2.1\Moj.pdb

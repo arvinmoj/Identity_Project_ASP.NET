@@ -3904,7 +3904,10 @@
         },
         "runtime": {
           "bin/placeholder/Validator.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "ViewModels/1.0.0": {
         "type": "project",
@@ -3939,7 +3942,10 @@
         },
         "runtime": {
           "bin/placeholder/XUnitTestProject.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -11495,57 +11501,64 @@
     ]
   },
   "packageFolders": {
-    "/Users/macbook/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\pc1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Desktop/Identity_Project_ASP.NET/My_Application/My_Application.csproj",
+      "projectUniqueName": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\My_Application.csproj",
       "projectName": "My_Application",
-      "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/My_Application/My_Application.csproj",
-      "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/My_Application/obj/",
+      "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\My_Application.csproj",
+      "packagesPath": "C:\\Users\\pc1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "/Users/macbook/.config/NuGet/NuGet.Config"
+        "C:\\Users\\pc1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/Data/Data.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Data/Data.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Data\\Data.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/Models/Models.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Models/Models.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Models\\Models.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/Moj/Moj.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Moj/Moj.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Moj\\Moj.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Moj\\Moj.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/Repository/Repository.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Repository/Repository.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Repository\\Repository.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/Resources/Resources.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Resources/Resources.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Resources\\Resources.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Resources\\Resources.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/Validator/Validator.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/Validator/Validator.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Validator\\Validator.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\Validator\\Validator.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/ViewModels/ViewModels.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/ViewModels/ViewModels.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\ViewModels\\ViewModels.csproj"
             },
-            "/Users/macbook/Desktop/Identity_Project_ASP.NET/XUnitTestProject/XUnitTestProject.csproj": {
-              "projectPath": "/Users/macbook/Desktop/Identity_Project_ASP.NET/XUnitTestProject/XUnitTestProject.csproj"
+            "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\XUnitTestProject\\XUnitTestProject.csproj": {
+              "projectPath": "C:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\XUnitTestProject\\XUnitTestProject.csproj"
             }
           }
         }
@@ -11607,7 +11620,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

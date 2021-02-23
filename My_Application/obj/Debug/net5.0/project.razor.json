@@ -15628,6 +15628,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\Account\\ResetPassword.cshtml",
+      "TargetPath": "Views\\Account\\ResetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15658,6 +15663,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\Account\\ForgotPassword.cshtml",
+      "TargetPath": "Views\\Account\\ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
+      "TargetPath": "Views\\Account\\ForgotPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\Account\\Login.cshtml",
       "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
@@ -15670,6 +15685,11 @@
     {
       "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\Shared\\_PartialNavbar.cshtml",
       "TargetPath": "Views\\Shared\\_PartialNavbar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\pc1\\Desktop\\Identity_Project_ASP.NET\\My_Application\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+      "TargetPath": "Views\\Account\\ResetPasswordConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
